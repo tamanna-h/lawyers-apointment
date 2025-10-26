@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
+import Lawyer from '../Lawyer/Lawyer';
 
 const Lawyers = () => {
-
-    const [allLawyers, setAllLawyers] = useState([]);
-
-    useEffect(() => {
-        fetch('lawyersData.json')
-            .then(res => res.json())
-            .then(data => setAllLawyers(data))
-    }, []);
-
-    console.log(allLawyers);
     
+    const lawyersDataPromise  = fetch('lawyersData.json').then(res => res.json());
 
     return (
         <div>
-            <h3>Lawyers: {allLawyers.length}</h3>
+            <h1 className='text-3xl text-center p-6'>All Lawyers</h1>
+            <Suspense fallback={<div>Loading...</div>}>
+                {
+                    <Lawyer lawyersDataPromise={lawyersDataPromise} />
+                }
+            </Suspense>
         </div>
     );
 };
