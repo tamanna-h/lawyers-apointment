@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Ayesha Rahman",
+    "name": "Arif Hossain",
     "specialization": "Criminal Law",
     "licenseNumber": "BD-2020-CR-001",
     "experienceYears": 8,
-    "email": "ayesha.rahman@lawfirm.com",
+    "email": "arif.hossain@lawfirm.com",
     "phone": "+8801712345678",
     "location": "Dhaka, Bangladesh",
     "available": true,
     "ratings": 4.8,
-    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/11.jpg"
   },
   {
     "id": 2,
-    "name": "Faisal Hossain",
+    "name": "Faisal Rahman",
     "specialization": "Corporate Law",
     "licenseNumber": "BD-2015-CO-002",
     "experienceYears": 10,
-    "email": "faisal.hossain@lawfirm.com",
+    "email": "faisal.rahman@lawfirm.com",
     "phone": "+8801812345678",
     "location": "Chittagong, Bangladesh",
     "available": false,
     "ratings": 4.5,
-    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/12.jpg"
   },
   {
     "id": 3,
-    "name": "Nusrat Jahan",
+    "name": "Nayeem Kabir",
     "specialization": "Family Law",
     "licenseNumber": "BD-2018-FA-003",
     "experienceYears": 6,
-    "email": "nusrat.jahan@lawfirm.com",
+    "email": "nayeem.kabir@lawfirm.com",
     "phone": "+8801912345678",
     "location": "Sylhet, Bangladesh",
     "available": true,
     "ratings": 4.9,
-  "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/13.jpg"
   },
   {
     "id": 4,
@@ -49,20 +49,20 @@
     "location": "Khulna, Bangladesh",
     "available": true,
     "ratings": 4.7,
-"photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/14.jpg"
   },
   {
     "id": 5,
-    "name": "Sharmin Akter",
+    "name": "Rashed Chowdhury",
     "specialization": "Civil Litigation",
     "licenseNumber": "BD-2017-CI-005",
     "experienceYears": 7,
-    "email": "sharmin.akter@lawfirm.com",
+    "email": "rashed.chowdhury@lawfirm.com",
     "phone": "+8801612345678",
     "location": "Rajshahi, Bangladesh",
     "available": false,
     "ratings": 4.6,
-"photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/15.jpg"
   },
   {
     "id": 6,
@@ -75,20 +75,20 @@
     "location": "Dhaka, Bangladesh",
     "available": true,
     "ratings": 4.4,
-"photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/16.jpg"
   },
   {
     "id": 7,
-    "name": "Maliha Sultana",
+    "name": "Mahiul Islam",
     "specialization": "Environmental Law",
     "licenseNumber": "BD-2019-EN-007",
     "experienceYears": 5,
-    "email": "maliha.sultana@lawfirm.com",
+    "email": "mahiul.islam@lawfirm.com",
     "phone": "+8801666666666",
     "location": "Barisal, Bangladesh",
     "available": true,
     "ratings": 4.3,
-  "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/17.jpg"
   },
   {
     "id": 8,
@@ -101,46 +101,46 @@
     "location": "Comilla, Bangladesh",
     "available": false,
     "ratings": 4.2,
-"photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/18.jpg"
   },
   {
     "id": 9,
-    "name": "Sadia Haque",
+    "name": "Sabbir Hossain",
     "specialization": "Property Law",
     "licenseNumber": "BD-2021-PL-009",
     "experienceYears": 3,
-    "email": "sadia.haque@lawfirm.com",
+    "email": "sabbir.hossain@lawfirm.com",
     "phone": "+8801888888888",
     "location": "Narayanganj, Bangladesh",
     "available": true,
     "ratings": 4.6,
-"photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/19.jpg"
   },
   {
     "id": 10,
-    "name": "Rashed Chowdhury",
+    "name": "Rafiqul Islam",
     "specialization": "Labor Law",
     "licenseNumber": "BD-2014-LA-010",
     "experienceYears": 11,
-    "email": "rashed.chowdhury@lawfirm.com",
+    "email": "rafiqul.islam@lawfirm.com",
     "phone": "+8801999999999",
     "location": "Jessore, Bangladesh",
     "available": true,
     "ratings": 4.7,
-   "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/20.jpg"
   },
   {
     "id": 11,
-    "name": "Farzana Mahmud",
+    "name": "Farhan Mahmud",
     "specialization": "International Law",
     "licenseNumber": "BD-2011-IL-011",
     "experienceYears": 13,
-    "email": "farzana.mahmud@lawfirm.com",
+    "email": "farhan.mahmud@lawfirm.com",
     "phone": "+8801400000000",
     "location": "Mymensingh, Bangladesh",
     "available": false,
     "ratings": 4.9,
- "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/21.jpg"
   },
   {
     "id": 12,
@@ -153,6 +153,6 @@
     "location": "Gazipur, Bangladesh",
     "available": true,
     "ratings": 4.1,
-  "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+    "photo": "https://randomuser.me/api/portraits/men/22.jpg"
   }
 ]

@@ -4,13 +4,18 @@ import Lawyer from '../Lawyer/Lawyer';
 const Lawyers = ({data}) => {
     
     return (
-        <div>
-            <h1 className='text-3xl text-center p-6'>All Lawyers</h1>
-            <Suspense fallback={<div>Loading...</div>}>
-                {
-                    data.map(lawyer => <Lawyer key={lawyer.id} lawyer={lawyer}/>)
-                }
-            </Suspense>
+        <div className='bg-white text-black py-15'>
+            <div className='max-w-6xl mx-auto '>
+                <h1 className='text-4xl text-center p-6 font-bold'>Our Best Lawyers</h1>
+                <p className='text-center text-[#3F3F3F] max-w-4xl mx-auto text-sm pb-8'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        {
+                            data.map(lawyer => <Lawyer key={lawyer.id} lawyer={lawyer}/>)
+                        }
+                    </div>
+                </Suspense>
+            </div>
         </div>
     );
 };
