@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 const Lawyer = ({lawyer}) => {
 
-    const {photo, name, specialization, licenseNumber, experienceYears, available} = lawyer;
+    const {photo, name, specialization, licenseNumber, experienceYears, available, id} = lawyer;
 
     return (
+        <Link to={`/lawyerDetails/${id}`}>
         <div className="card card-side border border-[#DBDBDB] rounded-2xl">
             <figure>
                 <img
@@ -22,9 +24,11 @@ const Lawyer = ({lawyer}) => {
                     <p className='text-lg'>{specialization}</p>
                     <p>{'\u00AE'} Licence No: {licenseNumber}</p>
                 </div>
-                <button className="w-full outline-1 outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
+                <button className="w-full outline outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
             </div>
         </div>
+        </Link>
+        
     );
 };
 

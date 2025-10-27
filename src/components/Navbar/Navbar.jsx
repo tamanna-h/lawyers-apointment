@@ -1,12 +1,13 @@
 import React from 'react';
 import lawLogo from '../../assets/law-logo.png'
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const links = <>
-      <li className='m-2 px-3'>Home</li>
-      <li className='m-2 px-3'>My-Bookings</li>
-      <li className='m-2 px-3'>Blogs</li>
-      <li className='m-2 px-3'>Contact Us</li>
+    <Link to='/'><li className='m-2 px-3'>Home</li></Link>
+    <Link to='/bookings'><li className='m-2 px-3'>My-Bookings</li></Link>
+    <Link to='/blogs'><li className='m-2 px-3'>Blogs</li></Link>
+    <Link to='/contact'><li className='m-2 px-3'>Contact Us</li></Link>
   </>
     return (
         <div className='bg-white text-black'>
