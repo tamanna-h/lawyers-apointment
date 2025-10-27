@@ -1,9 +1,6 @@
-import React, { use } from 'react';
-
-const Lawyer = ({lawyersDataPromise}) => {
-    const data = use(lawyersDataPromise)
-
-    console.log(data);
+import React from 'react';
+const Lawyer = ({lawyer}) => {
+    console.log(lawyer);
     
     return (
         <div>
