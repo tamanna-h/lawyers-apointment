@@ -22,7 +22,7 @@ const Lawyer = ({lawyer}) => {
                     <p className='text-lg'>{specialization}</p>
                     <p>{'\u00AE'} Licence No: {licenseNumber}</p>
                 </div>
-                <button className="w-full outline outline-1 outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
+                <button className="w-full outline-1 outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
             </div>
         </div>
     );
