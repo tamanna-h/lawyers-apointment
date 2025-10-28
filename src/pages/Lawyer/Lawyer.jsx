@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import { FaRegRegistered } from "react-icons/fa6";
 const Lawyer = ({lawyer}) => {
 
     const {photo, name, specialization, licenseNumber, experienceYears, available, id} = lawyer;
@@ -7,11 +8,11 @@ const Lawyer = ({lawyer}) => {
     return (
         <Link to={`/lawyerDetails/${id}`}>
         <div className="card card-side border border-[#DBDBDB] rounded-2xl">
-            <figure>
+            <figure className=''>
                 <img
-                    className='w-25 h-25 rounded-2xl m-5'
+                    className='p-6 m-5'
                     src={photo}
-                    alt="Movie" />
+                    alt="Lawyer photo" />
             </figure>
             <div className="card-body">
                 <div className='flex'>
@@ -22,7 +23,7 @@ const Lawyer = ({lawyer}) => {
                 <h2 className="card-title text-2xl font-bold">{name}</h2>
                 <div className='text-start text-[#6F6F6F]'>
                     <p className='text-lg'>{specialization}</p>
-                    <p>{'\u00AE'} Licence No: {licenseNumber}</p>
+                    <p className='flex gap-1'><FaRegRegistered className='mt-1'/>  Licence No: {licenseNumber}</p>
                 </div>
                 <button className="w-full outline outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
             </div>
