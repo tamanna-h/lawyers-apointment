@@ -2,6 +2,8 @@ import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import { BsExclamationSquare } from "react-icons/bs";
 import { FaRegRegistered } from "react-icons/fa6";
+import { addToDB, getBookedLawyer } from '../../utility/addToDB';
+import { ToastContainer, toast } from 'react-toastify';
 
 const LawyerDetails = () => {
     const { id } = useParams();
@@ -11,6 +13,17 @@ const LawyerDetails = () => {
     console.log(lawyer);
 
     const {name, photo, specialization, licenseNumber, experienceYears, availableDays, fees} = lawyer || {};
+
+    const handleAppointment = (id) => {
+        const bookedLawyers = getBookedLawyer();
+
+        if (bookedLawyers.includes(id)) {
+            toast.warn("You’ve already booked this lawyer!", {autoClose: 2000});
+        } else {
+            addToDB(id);
+            toast.success("Appointment booked successfully!", {autoClose: 2000});
+        }
+    }
     
     return (
         <div className=' bg-white text-black py-15'>
@@ -50,7 +63,8 @@ const LawyerDetails = () => {
                 <button className='p-2 px-4 rounded-3xl text-xs text-[#09982F] bg-[#E7F5EB]'>Lawyer Available Today</button>
             </div>
             <button className='border border-[#FFE5B8] bg-[#FFF6E6] py-1 px-4 my-4 rounded-2xl text-[#FFA000] flex'><BsExclamationSquare className='mr-2 mt-1 rounded' />Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</button>
-            <button className='btn bg-[#0EA106] my-5 w-full rounded-3xl border-0 text-white'>Book Appointment Now</button>
+            <ToastContainer/> 
+            <button onClick={() => handleAppointment(id)} className='btn bg-[#0EA106] my-5 w-full rounded-3xl border-0 text-white'>Book Appointment Now</button>
         </section>
         
 
