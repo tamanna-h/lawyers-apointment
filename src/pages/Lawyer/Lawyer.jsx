@@ -6,7 +6,6 @@ const Lawyer = ({lawyer}) => {
     const {photo, name, specialization, licenseNumber, experienceYears, available, id} = lawyer;
 
     return (
-        <Link to={`/lawyerDetails/${id}`}>
         <div className="card card-side border border-[#DBDBDB] rounded-2xl">
             <figure className=''>
                 <img
@@ -25,11 +24,11 @@ const Lawyer = ({lawyer}) => {
                     <p className='text-lg'>{specialization}</p>
                     <p className='flex gap-1'><FaRegRegistered className='mt-1'/>  Licence No: {licenseNumber}</p>
                 </div>
-                <button className="w-full outline outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl ">View Details</button>
+                <Link to={`/lawyerDetails/${id}`}>
+                    <button className="w-full outline outline-[#D1E1FA] text-[#176AE5] font-bold py-2 rounded-2xl cursor-pointer ">View Details</button>
+                </Link>
             </div>
         </div>
-        </Link>
-        
     );
 };
 
