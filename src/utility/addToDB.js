@@ -16,4 +16,11 @@ const addToDB = (id) => {
     }
 }
 
+export const removeFromDB = (id) => {
+  let bookedLawyers = getBookedLawyer();
+  bookedLawyers = bookedLawyers.filter((bookedId) => bookedId !== String(id));
+  localStorage.setItem('bookedLawyer', JSON.stringify(bookedLawyers));
+};
+
+
 export {addToDB, getBookedLawyer};
