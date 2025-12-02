@@ -1,13 +1,14 @@
 import React from 'react';
 import lawLogo from '../../assets/law-logo.png'
-import { Link } from 'react-router';
+import { NavLink } from "react-router-dom";
+import "../Navbar/Navbar.css";
 
 const Navbar = () => {
     const links = <>
-    <Link to='/'><li className='m-2 px-3'>Home</li></Link>
-    <Link to='/bookings'><li className='m-2 px-3'>My-Bookings</li></Link>
-    <Link to='/blogs'><li className='m-2 px-3'>Blogs</li></Link>
-    <Link to='/contact'><li className='m-2 px-3'>Contact Us</li></Link>
+      <NavLink to="/" className="menu-item">Home</NavLink>
+      <NavLink to="/bookings" className="menu-item">My-Bookings</NavLink>
+      <NavLink to="/blogs" className="menu-item">Blogs</NavLink>
+      <NavLink to="/contact" className="menu-item">Contact Us</NavLink>
   </>
     return (
         <div className='bg-white text-black'>

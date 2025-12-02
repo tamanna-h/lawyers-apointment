@@ -1,0 +1,11 @@
+.menu-item {
+  margin: 8px;
+  padding: 0 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
